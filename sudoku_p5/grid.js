@@ -7,6 +7,7 @@ class Grid {
     this.text_Colour = "rgb(170, 255, 153)";
     this.hint_Colour = "rgb(49, 84, 51)";
     this.time_Colour = "rgb(0, 145, 255)";
+    this.pressedButton = "rgb(37, 75, 247)";
     this.stroke_time_Colour = "rgb(0, 15, 132)"
 
     // player_prediction
@@ -53,6 +54,7 @@ class Grid {
     text("Time: " + MIN + " : " + SEC, 0.3 * size + 9 * size, 1 * size);
     pop();
 
+    // highlighting
     for (let i = 0; i < 9; ++i) {
       for (let j = 0; j < 9; ++j) {
         if (this.getVal(i, j) === curCell) {
